@@ -1,5 +1,5 @@
 // test.js
-import GapiLogin from './gapilogin.js';
+import GapiLogin from './index.js';
 import listSites from './tests/listSites.js';
 import getTotalClicksLastMonth from './tests/totalClicksLastMonth.js';
 
