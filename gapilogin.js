@@ -1,7 +1,7 @@
 import fs from 'fs';
 import express from 'express';
 import { google } from 'googleapis';
-import opn from 'opn';
+import open from 'open';
 import path from 'path';
 import url from 'url';
 
@@ -103,7 +103,7 @@ if (!token_is_valid) {
       });
   
       console.log(`Opening authentication URL in your default browser: ${authorizeUrl}`);
-      opn(authorizeUrl); // Open the URL in the default browser
+      open(authorizeUrl); // Open the URL in the default browser
   
       await waitForCallback; // Wait for the Promise to resolve
     }
